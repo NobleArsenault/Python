@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>check the console, stupid?</h1>
+<script type="text/javascript">
+    function Node(val){
+        this.val = val;
+        this.next = null;
+
+}
+
+    function SLL(){
+        this.head = null;
+        this.add = function(val){
+            if(this.head == null){
+                this.head = new Node(val);
+            }else{
+                var runner = this.head;
+                while(runner.next != null){
+                    runner = runner.next;
+                }
+                runner.next = new Node(val);
+            }
+            return this;
+        }
+
+    }
+
+var sll1 = new SLL();
+sll1.add(1).add(2).add(3).add(4)
+console.log(sll1);
+
+</script>
+
+
+</body>
+</html>
