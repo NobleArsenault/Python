@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enter Something</title>
+</head>
+<body>
+        {{session["test"]}}
+        <h1>Example Page</h1>
+        
+        <p>Choose the options in the form below then submit your selections.</p>
+        
+        <form action="/result" method="post">
+          <div class="form-group">
+            <label for="vehicle">Vehicle</label>
+            <select id="vehicle" class="form-control" name="vehicle">
+              <option>truck</option>
+              <option>car</option>
+              <option>van</option>
+            </select>
+          </div>
+        
+          <div class="form-group">
+            <label for="year">Year</label>
+            <select id="year" class="form-control" name="year">
+              <option>1972</option>
+              <option>1999</option>
+              <option>2010</option>
+            </select>
+          </div>
+
+        
+        <br>
+
+                First name:<br>
+                <input type="text" name="firstname"><br>
+                Last name:<br>
+                <input type="text" name="lastname">
+<Br>
+<br>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+<br>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form test index</title>
+</head>
+<body>
+    <!--
+    The form we build above is a standard form that users can input their first and last names along with their email address. Let's take some time to discuss each individual HTML element and its attributes:
+    
+    The form tag
+    Everything contained within the HTML form tags can be transmitted to another page: something I'm sure you've been curious about since you started working with HTML. How does this happen? Well, let's take a look at the attributes of the form tag.
+    
+    The action attribute
+    The form's action attribute will be set equal to the route where the information, contained within the form, will be sent to. In this case, we are going to send the information to '/users'. All of our code for handling this form data will be contained in the '/users' route.
+    
+    Note: /usersis just a route name. You can send your form to whatever route name you like. Just remember that every request/route has a URL and an HTTP verb or method.
+    
+    The method attribute
+    There are two values that you will see this attribute being set to: GET and POST. If you remember HTTP requests, then you will remember that GET and POST are the two types of HTTP request methods that are most common. In addition to serving pages, a GET request is for insensitive information and a POST request is for passing sensitive information.
+    
+    The method attribute specifies the type of HTTP request by how you, as the developer, want to have your form information transferred. If your form data contains password data, credit card numbers, SSNs, etc, please use POST! If the information is like a library search or something insensitive, it's OK to use GET as your method.
+    
+    In general, you should associate forms with the POST method (in most cases), and sending responses with the GET method.
+    
+    The input element
+    The form tag will set up all of the logistics, but the information you want to gather will be harvested from the elements you place within the form. In our basic example, we have just one type of input, a text field. There are several different input types that can gather data:
+    
+    text - a basic collector for text
+    radio button - when you want the user to select from a number of options
+    password - like text but the text entered will be disguised (as circles!)
+    checkbox - when a user must be prompted for a yes or no type argument
+    see the rest here!
+    Decide on the input elements you want to include in your form. Each must be assigned a name attribute if you want each input to be recognized by your server-side code. When the HTML form gathers up your data it will create a set of key/value pairs with the name attributes as the keys and the data the user enters as the values. Notice in our form above that we give a name to each input element that reflects the information we want to gather.
+    
+    And that's the front end! The form data will be sent to the server when the user clicks the submit button. The form data is organized into key/value pairs and submitted to the URL specified by your form's 'action' attribute using the HTTP method specified in your form's 'method' attribute.
+-->
+    <h1>Index</h1>
+    <h3>Create User</h3>
+    <form action=method="post" action="/users">
+    Name: <input type="text" name="name">
+    Email: <input type="text" name="email">
+    <input type="submit" value="create user">
+    
+    </form>
+</body>
+</html>

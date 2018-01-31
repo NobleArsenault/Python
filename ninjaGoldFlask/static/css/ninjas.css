@@ -1,0 +1,33 @@
+body {
+    background-image: url('/static/images/ninja.png');
+    background-size: 240px;
+    background-color: #cccccc;
+}
+.container       {margin:10px; padding: 5px;background-color: white;text-align: center; border: 3px solid black;}
+
+.building{
+    height:140px;
+    width:170px;
+    display: inline-block;
+    border: 3px solid black;
+    background-color: silver;
+    margin:6px;
+    padding:22px;
+    text-align:center;
+}
+
+h3 {
+    color: rgb(98, 0, 190)
+
+}
+
+
+div{
+    color: rgb(61, 13, 13);
+}
+
+
+
+
+
+

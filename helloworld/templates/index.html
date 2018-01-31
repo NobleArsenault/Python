@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hello world</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/stylesheet.css") }}">
+    <script type="text/javascript" src="{{ url_for("static", filename="js/myscript.js") }}"></script>
+</head>
+<body>
+    <h1>Hello flask I've embedded my python into you ;)</h1>
+    <p>{{ phrase }}</p>
+    <p>{{ times }}</p>
+    <p>my name is {{ name }}</p>
+    {%for x in range (0, times)%}
+        {%if x % 2 == 1 %}
+        <p>{{ phrase }}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
