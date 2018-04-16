@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hello</title>
+    <!--{% load static %}-->
+    <!-- The line above tells Django to be ready to listen for static files -->
+    <!--<link rel="stylesheet" href="{% static 'ourApp/css/main.css' %}" media="screen" title="no title"  charset="utf-8">-->
+    <!-- Put the static files in the static folder inside your app.  Django collects files within all static folders and puts them within a single folder -->    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/times" method="post">
+        {% csrf_token %}
+        Name: <input type="text" name="name" placeholder="name">
+        <input type="submit" value="submit">
+
+    </form>
+
+
+</body>
+</html>

@@ -14,7 +14,7 @@ dames (girls)
 """
 def dames( mydic ):
     for i, entry in enumerate(mydic):
-        print (i + 1) 
+        print (i + 1)
         print entry['first_name']
 
 

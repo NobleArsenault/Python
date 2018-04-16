@@ -1,6 +1,6 @@
 words = "its thanksgiving day. its my birthday, too!"
 
-words.find('day')
+print words.find('day')
 
 print words.replace("day", "month", 1)
 
